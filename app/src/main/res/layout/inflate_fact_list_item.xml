@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/baseline_arrow_forward_ios_black_24"/>
+
+    <RelativeLayout
+        android:id="@+id/cardContentRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/arrow">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Title of feed"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/primary_text_size"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewTitle"
+            android:layout_alignStart="@+id/textViewTitle"
+            android:layout_below="@+id/textViewTitle">
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/factImage"
+                android:text="Description of feed"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/secondary_text_size"
+                android:textStyle="normal"/>
+
+            <ImageView
+                android:id="@+id/factImage"
+                android:layout_margin="8dp"
+                android:layout_width="96dp"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                 />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/cardContentRelativeLayout"
+        android:background="@color/title_text_color"
+        />
+
+</RelativeLayout>

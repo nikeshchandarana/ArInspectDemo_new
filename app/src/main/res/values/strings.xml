@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="loading">Loading...</string>
+    <string name="no_data">No Data.</string>
+    <string name="no_internet">Could not connect to internet.</string>
+    <string name="got_internet">You are connected to internet.</string>
+</resources>
